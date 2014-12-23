@@ -12,7 +12,16 @@ flavors by `Runscope <https://www.runscope.com/>`__
 ENDPOINTS
 ---------
 
--  ```/`` <http://httpbin.org/>`__ This page.
+=======================================   =======
+Endpoint                                  Description
+---------------------------------------   -------
+`/ <http://httpbin.org/>`_                This page.
+`/response-headers <responseheaders>`_    Returns given response headers.
+=======================================   =======
+
+.. _responseheaders: http://httpbin.org/response-headers?Content-Type=text/plain;%20charset=UTF-8&Server=httpbin
+
+
 -  ```/ip`` <http://httpbin.org/ip>`__ Returns Origin IP.
 -  ```/user-agent`` <http://httpbin.org/user-agent>`__ Returns
    user-agent.
@@ -27,8 +36,6 @@ ENDPOINTS
    data.
 -  ```/status/:code`` <http://httpbin.org/status/418>`__ Returns given
    HTTP Status code.
--  ```/response-headers?key=val`` <http://httpbin.org/response-headers?Content-Type=text/plain;%20charset=UTF-8&Server=httpbin>`__
-   Returns given response headers.
 -  ```/redirect/:n`` <http://httpbin.org/redirect/6>`__ 302 Redirects
    *n* times.
 -  ```/redirect-to?url=foo`` <http://httpbin.org/redirect-to?url=http://example.com/>`__
